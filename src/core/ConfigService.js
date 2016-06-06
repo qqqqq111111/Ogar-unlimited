@@ -23,11 +23,12 @@ module.exports = class ConfigService {
         clientNames: 2,
         clientShowMass: 1,
         clientSmooth: 1,
-    
-    // Future features
-       minionCount: 0,
-        minimap: 0,
         clientMaxName: 15,
+        
+    // Future features
+       //minionCount: 0,
+      //  minimap: 0,
+        
     
         adminConfig: 0, // Turn on or off the use of admin configurations. (1 is on - 0 is off)
         adminNames: "", // The name a user would have to use to register as an admin.
