@@ -33,6 +33,7 @@ ClientPacket.prototype.build = function() {
     // Others
     maxName: 15,
   };
+  for (var i in gameServer.client) send[i] = gameServer.client[i];
   var toSend = JSON.stringify(send);
   
   var b = toSend.length + 2;
