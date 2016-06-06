@@ -244,6 +244,14 @@ reloadDataPacket() {
   }
   
 }
+reloadClientPacket() {
+  for (var i in this.clients) {
+    var client = this.clients[i];
+    if (!client) continue;
+    client.sendPacket(new Packet.ClientPacket(this));
+  }
+  
+}
 getDist(x1, y1, x2, y2) { // Use Pythagoras theorem
     let from = {'x': x1, 'y': y1 };
     let to = {'x': x2, 'y': y2};
