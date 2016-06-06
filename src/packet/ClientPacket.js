@@ -8,7 +8,7 @@ ClientPacket.prototype.build = function() {
   // this is an upcoming feature where the game can edit the client
   var send = { // Levels of "permission": 0 = not allowed, 1 = checked off but changeable, 2 = checked on but changeable, 3 = always on
    
-   // Macros
+   // Macros (1 = on)
     sMacro: 0,
     wMacro: 0,
     qMacro: 0,
